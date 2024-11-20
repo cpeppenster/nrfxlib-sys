@@ -99,7 +99,7 @@ fn main() {
 
 	#[cfg(feature = "nrf9120")]
 	let libmodem_original_path =
-		Path::new(&nrfxlib_path).join("nrf_modem/lib/cellular/nrf9120/hard-float/libmodem.a");
+		Path::new(&nrfxlib_path).join("nrf_modem/lib/dect_phy/nrf9120/hard-float/libmodem.a");
 
 	let libmodem_changed_path = PathBuf::from(env::var("OUT_DIR").unwrap()).join("libmodem.a");
 
