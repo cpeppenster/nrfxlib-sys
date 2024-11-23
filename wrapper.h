@@ -2,6 +2,9 @@
  * These are the header files exported by this crate.
  */
 
+#undef CONFIG_NRF_MODEM_LINK_BINARY_CELLULAR
+#define CONFIG_NRF_MODEM_LINK_BINARY_DECT_PHY
+
 /*
  * libmodem headers
  */
