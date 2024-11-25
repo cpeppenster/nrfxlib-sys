@@ -2,13 +2,10 @@
  * These are the header files exported by this crate.
  */
 
-#undef CONFIG_NRF_MODEM_LINK_BINARY_CELLULAR
-#define CONFIG_NRF_MODEM_LINK_BINARY_DECT_PHY
-#define CONFIG_CARRIER 1677
-
 /*
  * libmodem headers
  */
+#include "nrf_modem/include/nrf_modem_toolchain.h"
 #include "nrf_modem/include/nrf_modem.h"
 #include "nrf_modem/include/nrf_modem_os.h"
 #include "nrf_modem/include/nrf_errno.h"

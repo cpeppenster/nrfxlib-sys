@@ -33,6 +33,7 @@ fn main() {
 		// Point to our special local headers
 		.clang_arg("-I./include")
 		// Add extra paths that the C files assume are searched
+		.clang_arg("-I./third_party/nordic/nrfxlib/nrf_modem/include")
 		.clang_arg("-I./third_party/nordic/nrfxlib/crypto/nrf_cc310_platform/include")
 		.clang_arg("-I./third_party/nordic/nrfxlib/crypto/nrf_cc310_mbedcrypto/include")
 		.clang_arg("-I./third_party/nordic/nrfxlib/crypto/nrf_oberon")
