@@ -95,7 +95,7 @@ fn main() {
 
 	#[cfg(feature = "nrf9160")]
 	let libmodem_original_path =
-		Path::new(&nrfxlib_path).join("nrf_modem/lib/cellular/nrf9160/hard-float/libmodem.a");
+		Path::new(&nrfxlib_path).join("nrf_modem/lib/dect_phy/nrf9160/hard-float/libmodem.a");
 
 	#[cfg(feature = "nrf9120")]
 	let libmodem_original_path =
