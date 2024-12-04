@@ -44,7 +44,7 @@ fn main() {
 		.clang_arg("arm")
 		.clang_arg("-mcpu=cortex-m33")
 		// Use softfp
-		.clang_arg("-mfloat-abi=soft")
+		.clang_arg("-mfloat-abi=hard")
 		// We're no_std
 		.use_core()
 		// Include only the useful stuff
