@@ -21,6 +21,19 @@ fn main() {
 	use std::env;
 	use std::path::{Path, PathBuf};
 	let nrfxlib_path = "./third_party/nordic/nrfxlib";
+
+	cc::Build::new()
+		.file("wrapper.c")
+		.include("./include")
+		.include("./third_party/nordic/nrfxlib")
+		.include("./third_party/nordic/nrfxlib/nrf_modem/include")
+		.include("./third_party/nordic/nrfxlib/crypto/nrf_cc310_platform/include")
+		.include("./third_party/nordic/nrfxlib/crypto/nrf_cc310_mbedcrypto/include")
+		.include("./third_party/nordic/nrfxlib/crypto/nrf_oberon")
+		.compile("nrfxlib_helper");
+
+	println!("cargo:rustc-link-lib=static=nrfxlib_helper");
+
 	// The bindgen::Builder is the main entry point
 	// to bindgen, and lets you build up options for
 	// the resulting bindings.
