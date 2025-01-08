@@ -105,8 +105,8 @@ struct nrf_modem_dect_phy_tx_rx_params nrf_modem_dect_phy_tx_rx_params_new(
     struct nrf_modem_dect_phy_rx_params rx_params
 ) {
     struct nrf_modem_dect_phy_tx_rx_params params = {
-        .tx_params = tx_params,
-        .rx_params = rx_params
+        .tx = tx_params,
+        .rx = rx_params
     };
 
     return params;
