@@ -172,6 +172,11 @@ struct nrf_modem_dect_phy_rx_params nrf_modem_dect_phy_rx_params_new(
     struct nrf_modem_dect_phy_rx_filter filter
 );
 
+struct nrf_modem_dect_phy_tx_rx_params nrf_modem_dect_phy_tx_rx_params_new(
+    struct nrf_modem_dect_phy_tx_params tx_params,
+    struct nrf_modem_dect_phy_rx_params rx_params
+);
+
 #endif
 
 // End of File
